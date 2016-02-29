@@ -1,0 +1,30 @@
+body {
+  background-colour: #000000;
+}
+
+div.provides {
+  display: none;
+}
+
+div.planner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.module {
+  padding: 10px;
+  margin: 10px;
+}
+
+div.core > div.module {
+  background-color: #990000;
+}
+
+div.optional > div.module {
+  background-color: #aaaaaa;
+}
+
+div.optional > div.selected {
+  background-color: #ff0000;
+}
