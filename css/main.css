@@ -12,6 +12,12 @@ div.planner {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 600px) {
+  div.planner {
+    flex-direction: column;
+  }
+}
+
 div.module {
   padding: 10px;
   margin: 10px;
@@ -23,6 +29,11 @@ div.core > div.module {
 
 div.optional > div.module {
   background-color: #aaaaaa;
+}
+
+div.optional > div.module > ul.requires,
+div.optional > div.module > p {
+  display: none;
 }
 
 div.optional > div.selected {

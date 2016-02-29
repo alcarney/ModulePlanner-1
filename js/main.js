@@ -7,10 +7,10 @@ $(document).ready(function() {
     var selector = "div.module#" + code + " > div.provides";
     if ($(selector).children().length) {
 
-      $(selector).children().each(function() {
+      $(selector).children().each(function () {
         var m = $(this).attr("class");
 
-        if (($("div.module#" + m).hasClass("selected"))) {
+        if(($("div.module#" + m).hasClass("selected"))) {
           $("div.module#" + m).removeClass("selected");
         }
 
@@ -25,13 +25,13 @@ $(document).ready(function() {
     var selector = "div.module#" + code + " > ul.requires";
     var available = true;
 
-    // If they exist check them, else return true
+     // If they exist check them, else return true
     if ($(selector).children().length) {
 
-      $(selector).children().each(function() {
+      $(selector).children().each(function () {
         var m = $(this).attr("class");
 
-        if (!($("div.module#" + m).hasClass("selected"))) {
+        if(!($("div.module#" + m).hasClass("selected"))) {
           available = false;
         }
 
@@ -75,4 +75,8 @@ $(document).ready(function() {
       var code = $(this).attr("id");
       selectModule(code);
     });
+
+  $("div.optional > div.module").hover(function() {
+    $(this).children("ul, p").slideToggle("slow");
+  });
 });
