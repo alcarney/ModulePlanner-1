@@ -2,22 +2,91 @@
 layout: default
 ---
 
-<div class="home">
+<body>
+<div class="planner">
+  <div class="year">
+    <div class="core">
 
-  <h1 class="page-heading">Posts</h1>
+      <div class="module">
+        <h2>Introduction to Probabilty</h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div>
+      <div class="module">
+        <h2>Analysis I</h2>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      </div>
+      <div class="module">
+        <h2>Algebra I</h2>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+    </div>
+    <div class="optional">
+      <div class="module" id="ma1300">
+        <h2>Mechanics I</h2>
+        <div class="provides">
+          <span class="ma2300"></span>
+          <span class="ma0332"></span>
+        </div>
+      </div>
+      <div class="module">
+        <h2>Prob Theory</h2>
+      </div>
+    </div>
+  </div>
+  <div class="year">
+    <div class="core">
 
+      <div class="module">
+        <h2>Introduction to Probabilty</h2>
+
+      </div>
+      <div class="module">
+        <h2>Analysis I</h2>
+
+      </div>
+      <div class="module">
+        <h2>Algebra I</h2>
+
+      </div>
+    </div>
+    <div class="optional">
+      <div class="module" id="ma2300">
+        <h2>Mechanics II</h2>
+        <p>Requires</p>
+        <ul class="requires">
+          <li class="ma1300">Mechanics I</li>
+
+        </ul>
+      </div>
+      <div class="module">
+        <h2>Foundations Stats</h2>
+      </div>
+    </div>
+  </div>
+  <div class="year">
+    <div class="core">
+
+      <div class="module">
+        <h2>Introduction to Probabilty</h2>
+
+      </div>
+      <div class="module">
+        <h2>Analysis I</h2>
+
+      </div>
+      <div class="module">
+        <h2>Algebra I</h2>
+
+      </div>
+    </div>
+    <div class="optional">
+      <div class="module" id="ma0332">
+        <h2>Fluids</h2>
+      </div>
+      <div class="module">
+        <h2>Prob Theory</h2>
+      </div>
+    </div>
+  </div>
 </div>
+</body>
