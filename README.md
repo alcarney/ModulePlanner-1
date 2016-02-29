@@ -19,10 +19,10 @@ Contributing
 There are many tasks that need completing before this can even be considered
 useful:
 
-  - Students should be able to select the modules they wish to take
-  - Students should be able to select their degree scheme as this alters which
+  - [ ] Students should be able to select the modules they wish to take
+  - [ ] Students should be able to select their degree scheme as this alters which
     modules are core and what optional modules are available
-  - Modules should grey-out as they become unavailable
-  - We need a good way of handling the placement of modules on screen
+  - [ ] Modules should grey-out as they become unavailable
+  - [ ] We need a good way of handling the placement of modules on screen
     so that related modules are placed near each other so that we dont have a
     mess.
