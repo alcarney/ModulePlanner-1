@@ -18,11 +18,16 @@ div.planner {
   }
 }
 
+div.planner > h1 {
+  color: #ffffff;
+}
+
 div.year > h1 {
   color: #ffffff;
 }
 
 div.module {
+  max-width: 350px;
   padding: 10px;
   margin: 10px;
 }
@@ -31,8 +36,20 @@ div.core > div.module {
   background-color: #990000;
 }
 
+div.core > div.module > h2 {
+  font-size: 18px;
+}
+
+div.core > div.module > .requires {
+    display: none;
+}
+
 div.optional > div.module {
   background-color: #aaaaaa;
+}
+
+div.optional > div.module > h2 {
+  font-size: 18px;
 }
 
 div.optional > div.module > ul.requires,

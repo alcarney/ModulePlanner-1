@@ -11,9 +11,8 @@
 {% endif %}
 
 {% if module.requires %}
- <p>Requires</p>
-
  <ul class="requires">
+     <p>Requires</p>
   {% for c in module.requires %}
     <li class="{{c}}">{{site.data.modules[c].name}}</li>
   {% endfor %}

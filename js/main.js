@@ -1,11 +1,15 @@
 $(document).ready(function() {
 
   // This function deselects any modules which depend on a module
-  // we just removed
+  // we just unselected
   var checkProvides = function(code) {
 
+    // This selects the list of modules this one enables you to study
     var selector = "div.module#" + code + " > div.provides";
+
+    // If that list actually exists for this module
     if ($(selector).children().length) {
+
 
       $(selector).children().each(function () {
         var m = $(this).attr("class");
@@ -18,21 +22,33 @@ $(document).ready(function() {
     }
   };
 
-  // This function checks the requirements for the module
+  // This function checks the requirements for the module, if this returns false
+  // then you cannot choose this module
   var checkRequires = function(code) {
 
-    // Choose the list of requirements
+    // This will select the list of requirements
     var selector = "div.module#" + code + " > ul.requires";
+
+    // Assume that we can choose the module for now
     var available = true;
 
-     // If they exist check them, else return true
+     // If the list of requirements exist
     if ($(selector).children().length) {
 
+      // For each item in the list,
       $(selector).children().each(function () {
+
+        // The class of this item contains the code for the module we need
         var m = $(this).attr("class");
 
+        // If the module isn't selected
         if(!($("div.module#" + m).hasClass("selected"))) {
+
+          // Then we can't choose this module
           available = false;
+
+          // Show the list of requirements so that the user knows why
+          $("div.module#" + code + " > .requires").slideDown("slow");
         }
 
       });
@@ -63,6 +79,7 @@ $(document).ready(function() {
 
         // If so select it
         $(selector).addClass("selected");
+        $(selector + "> .requires").slideUp("slow");
       }
     }
 
@@ -75,8 +92,4 @@ $(document).ready(function() {
       var code = $(this).attr("id");
       selectModule(code);
     });
-
-  $("div.optional > div.module").click(function() {
-    $(this).children("ul, p").slideToggle("slow");
-  });
 });
