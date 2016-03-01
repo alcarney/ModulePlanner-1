@@ -1,5 +1,5 @@
 body {
-  background-colour: #000000;
+  background-color: #000000;
 }
 
 div.provides {
@@ -16,6 +16,10 @@ div.planner {
   div.planner {
     flex-direction: column;
   }
+}
+
+div.year > h1 {
+  color: #ffffff;
 }
 
 div.module {

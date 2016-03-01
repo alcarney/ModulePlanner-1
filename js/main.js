@@ -76,7 +76,7 @@ $(document).ready(function() {
       selectModule(code);
     });
 
-  $("div.optional > div.module").hover(function() {
+  $("div.optional > div.module").click(function() {
     $(this).children("ul, p").slideToggle("slow");
   });
 });

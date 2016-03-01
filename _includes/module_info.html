@@ -1,0 +1,21 @@
+{% assign module = site.data.modules[code] %}
+
+<h2>{{module.name}}</h2>
+
+{% if module.provides %}
+<div class="provides">
+  {% for c in module.provides %}
+   <span class="{{c}}"></span>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if module.requires %}
+ <p>Requires</p>
+
+ <ul class="requires">
+  {% for c in module.requires %}
+    <li class="{{c}}">{{site.data.modules[c].name}}</li>
+  {% endfor %}
+ </ul>
+{% endif %}

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<body>
+
+<div class="planner">
+{% assign course = site.data.courses[page.short] %}
+
+{% for year in course.modules %}
+  <div class="year">
+    <h1>Year {{forloop.index}}</h1>
+
+    <div class="core">
+    {% for code in year.core %}
+       <div class="module" id="{{code}}">
+         {% include module_info.html %}
+       </div>
+    {% endfor %}
+    </div>
+
+    <div class="optional">
+    {% for code in year.optional %}
+       <div class="module" id="{{code}}">
+         {% include module_info.html %}
+       </div>
+    {% endfor %}
+    </div>
+  </div>
+
+{% endfor %}
+
+
+</div>
+
+
+</body>

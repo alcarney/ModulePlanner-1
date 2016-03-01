@@ -1,245 +1,306 @@
-ma0111:
+ma1001:
     name: Elementary Number Theory I
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0122:
     name: Algebra I
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0123:
     name: Analysis I
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0125:
     name: Algebra II
+    credits: 10
     requires: ['ma0122']
-    description: ''
+    more-info: ''
 
 ma0126:
     name: Analysis II
+    credits: 10
     requires: ['ma0123']
-    description: ''
+    more-info: ''
+
+ma1300:
+    name: Mechanics I
+    credits: 10
+    provides: ['ma2300', 'ma0332']
+    more-info:
 
 ma0212:
     name: Linear Algebra
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0216:
     name: Elementary Number Theory II
+    credits: 10
     requires: ['ma0111']
-    description: ''
+    more-info: ''
 
 ma0221:
     name: Analysis III
+    credits: 10
     requires: ['ma0123', 'ma0126']
-    description: ''
+    more-info: ''
 
 ma0232:
     name: Modelling with Differential Equations
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0235:
     name: Elementary Fluid Dynamics
+    credits: 10
     requires: ['ma1300', 'ma2301']
-    description: ''
+    more-info: ''
 
 ma0261:
     name: Operational Research
+    credits: 10
     requires: ['ma1500']
-    description: ''
+    more-info: ''
 
 ma2063:
     name: Introduction to Computational Statistics
+    credits: 10
     requires: ['ma1501', 'ma2500']
-    description: ''
+    more-info: ''
 
 ma0276:
     name: Visual Basic Programming for OR
+    credits: 10
     requires: ['ma1003']
-    description: ''
+    more-info: ''
 
 ma0291:
     name: Accountancy
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2001:
     name: Calculus of Several Variables
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2002:
     name: Matrix Algebra
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2003:
     name: Complex Analysis
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2004:
     name: Series and Transforms
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2005:
     name: Ordinary Differential Equations
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2300:
     name: Mechanics II
+    credits: 10
     requires: ['ma1300']
-    description: ''
+    more-info: ''
 
 ma2301:
     name: Vector Calculus
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma2500:
     name: Foundations of Probability and Statistics
+    credits: 10
     requires: ['ma1500', 'ma1501']
-    description: ''
+    more-info: ''
 
 ma2700:
     name: Numerical Analysis II
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0322:
     name: Knots
+    credits: 10
     requires: ['ma0212']
-    description: ''
+    more-info: ''
 
 ma0332:
     name: Fluid Mechanics
+    credits: 10
     requires: ['ma0235', 'ma2301']
-    description: ''
+    more-info: ''
 
 ma0355:
     name: Medical Statistics
+    credits: 10
     requires: ['ma2500']
-    description: ''
+    more-info: ''
 
 ma0358:
     name: Mathematical Programming
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0367:
     name: Time Series and Forecasting
+    credits: 10
     requires: ['ma2500']
-    description: ''
+    more-info: ''
 
 ma0381:
     name: Survey Sampling
+    credits: 10
     requires: ['ma2500']
-    description: ''
+    more-info: ''
 
 ma0391:
     name: Full Project
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma0392:
     name: Half Project
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma3000:
     name: Complex Function Theory
+    credits: 10
     requires: ['ma2003']
-    description: ''
+    more-info: ''
 
 ma3003:
     name: Groups, Rings and Fields
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma3004:
     name: Combinatorics
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma3005:
     name: Introduction to Functional and Fourier Analysis
+    credits: 10
     requires: ['ma0212', 'ma0221']
-    description: ''
+    more-info: ''
 
 ma3006:
     name: Introduction to Coding Theory and Data Compression
+    credits: 10
     requires: ['ma0212']
-    description: ''
+    more-info: ''
 
 ma3301:
     name: Applied Nonlinear Systems
+    credits: 10
     requires: ['ma0232']
-    description: ''
+    more-info: ''
 
 ma3303:
     name: Theoretical and Computational Partial Differential Equations
+    credits: 10
     requires: ['ma0122', 'ma0126']
-    description: ''
+    more-info: ''
 
 ma3304:
     name: Methods of Applied Mathematics
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma3500:
     name: Discrete Optimisation
+    credits: 10
     requires: ['ma0358']
-    description: ''
+    more-info: ''
 
 ma3501:
     name: Elements of Mathematical Statistics
+    credits: 10
     requires: ['ma2500']
-    description: ''
+    more-info: ''
 
 ma3502:
     name: Regression Analysis and Experimental Design
+    credits: 10
     requires: ['ma0152']
-    description: ''
+    more-info: ''
 
 ma3503:
     name: Stochastic Processes for Finance and Insurance
+    credits: 10
     requires: ['ma2500']
-    description: ''
+    more-info: ''
 
 ma3600:
     name: Operational Research II
+    credits: 10
     requires: ['ma0261']
-    description: ''
+    more-info: ''
 
 ma3700:
     name: Mathematical Methods for Data Mining
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma3900:
     name: Cyflwyniad i Addysgu Mathemateg mewn Ysgol Uwchradd
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4000:
     name: Operator Algebras and Non-Commutative Geometry
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4001:
     name: Functional Analysis
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4007:
     name: Measure Theory
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4008:
     name: Computational Fluid Analysis
+    credits: 10
     requires: ['ma3303']
-    description: ''
+    more-info: ''
 
 ma4009:
     name: Mathematical Principles of Image Processing
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4011:
     name: Combinatorial and Analytic Number Theory
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4012:
     name: Finite Elasticity
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4900:
     name: MMath Project
-    description: ''
+    credits: 10
+    more-info: ''
 
 ma4901:
     name: Reading Module
-    description: ''
+    credits: 10
+    more-info: ''

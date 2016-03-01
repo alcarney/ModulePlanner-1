@@ -1,0 +1,9 @@
+bsc:
+  modules:
+  - core: ['ma0122', 'ma0123', 'ma0125', 'ma0126']
+    optional: ['ma0111', 'ma1300']
+
+  - core: ['ma0212', 'ma0221', 'ma2001']
+    optional: ['ma0236', 'ma0232', 'ma2300']
+
+  - optional: ['ma0391', 'ma0392', 'ma3000', 'ma0332']
