@@ -13,19 +13,21 @@ layout: default
 
     <div class="core">
     {% for code in year.core %}
+
        <div class="module" id="{{code}}">
-           <!-- ['More info'](https://handbooks.data.cardiff.ac.uk/module/{{code.more-info}}.html) -->
-         {% include module_info.html %}
+           {% include module_info.html %}
        </div>
+
     {% endfor %}
     </div>
 
     <div class="optional">
     {% for code in year.optional %}
+
        <div class="module" id="{{code}}">
-           <!-- ['More info'](https://handbooks.data.cardiff.ac.uk/module/{{code.more-info}}.html) -->
-         {% include module_info.html %}
+           {% include module_info.html %}
        </div>
+
     {% endfor %}
     </div>
   </div>

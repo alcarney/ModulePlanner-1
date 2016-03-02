@@ -2,6 +2,8 @@
 
 <h2>{{module.name}}</h2>
 
+<a href="https://handbooks.data.cardiff.ac.uk/module/{{module.more-info}}.html">More info</a>
+
 {% if module.provides %}
 <div class="provides">
   {% for c in module.provides %}
@@ -11,10 +13,10 @@
 {% endif %}
 
 {% if module.requires %}
- <ul class="requires">
-     <p>Requires</p>
+<p class="requires">Requires</p>
+<ul class="requires">
   {% for c in module.requires %}
     <li class="{{c}}">{{site.data.modules[c].name}}</li>
   {% endfor %}
- </ul>
+</ul>
 {% endif %}

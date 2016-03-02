@@ -22,7 +22,7 @@ useful:
   - [x] Students should be able to select the modules they wish to take
   - [x] Students should be able to select their degree scheme as this alters
         which modules are core and what optional modules are available.
-  - [ ] Add pre-requisite provides modules.
+  - [ ] Add pre-requisite & provides to module yaml file.
   - [ ] Modules should grey-out as they become unavailable.
   - [ ] We need a good way of handling the placement of modules on screen
         so that related modules are placed near each other so that we dont have
