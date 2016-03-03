@@ -141,6 +141,11 @@ ma2500:
     requires: ['ma1500', 'ma1501']
     more-info: 1516-MA2500
 
+cm2303:
+    name: Algorithms and Data Structures
+    credits: 20
+    more-info: 1516-CM2303
+
 cm2203:
     name: Informatics
     credits: 10
