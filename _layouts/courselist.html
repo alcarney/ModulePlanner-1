@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<body>
+<div class="degree">
+    <h1>Please choose your degree scheme</h1>
+
+    {% for course in site.data.courses %}
+
+       <div class="course">
+          <h2><a href="{{course[0]}}.html">{{course[1].name}}</a></h2>
+       </div>
+       
+    {% endfor %}
