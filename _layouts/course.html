@@ -2,10 +2,11 @@
 layout: default
 ---
 
-<body>
+{% assign course = site.data.courses[page.short] %}
+
+{% include header.html %}
 
 <div class="planner">
-{% assign course = site.data.courses[page.short] %}
 
 {% for year in course.modules %}
   <div class="year">
