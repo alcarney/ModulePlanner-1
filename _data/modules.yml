@@ -21,6 +21,7 @@ ma1007:
 ma1500:
     name: Introduction to Probability Theory
     credits: 10
+    provides: ['ma1501', 'ma0261', 'ma2500']
     more-info: 1516-MA1500
 
 ma1006:
@@ -31,34 +32,38 @@ ma1006:
 ma1003:
     name: Computing for Mathematics
     credits: 20
+    provides: ['ma0276']
     more-info: 1516-MA1003
 
 ma1300:
     name: Mechanics I
     credits: 10
-    provides: ['ma2300', 'ma0332']
+    provides: ['ma2300', 'ma0235']
     more-info: 1516-MA1300
 
 ma0111:
     name: Elementary Number Theory I
     credits: 10
-    provides: ['ma2300', 'ma0332']
+    provides: ['ma0216']
     more-info: 1516-MA0111
 
 ma1501:
     name: Statistical Inference
     credits: 10
-    provides: ['ma2300', 'ma0332']
+    requires: ['ma1500']
+    provides: ['ma2500', 'ma2501', 'ma3502', 'ma3504']
     more-info: 1516-MA1501
 
 ma0221:
     name: Analysis III
     credits: 10
+    provides: ['ma3005']
     more-info: 1516-MA0221
 
 ma0212:
     name: Linear Algebra
     credits: 10
+    provides: ['ma0322', 'ma3005']
     more-info: 1516-MA0212
 
 ma2004:
@@ -79,6 +84,7 @@ ma2002:
 ma2003:
     name: Complex Analysis
     credits: 10
+    provides: ['ma3000']
     more-info: 1516-MA2003
 
 ma0216:
@@ -90,23 +96,27 @@ ma0216:
 ma0232:
     name: Modelling with Differential Equations
     credits: 10
+    provides: ['ma3301']
     more-info: 1516-MA0232
 
 ma0235:
     name: Elementary Fluid Dynamics
     credits: 10
+    provides: ['ma0332']
     requires: ['ma1300', 'ma2301']
     more-info: 1516-MA0235
 
 ma0261:
     name: Operational Research
     credits: 10
+    provides: ['ma3602', 'ma3601']
     requires: ['ma1500']
     more-info: 1516-MA0261
 
 ma0276:
     name: Visual Basic Programming for OR
     credits: 10
+    requires: ['ma1003']
     more-info: 1516-MA0276
 
 ma2300:
@@ -118,6 +128,7 @@ ma2300:
 ma2301:
     name: Vector Calculus
     credits: 10
+    provides: ['ma0235', 'ma0332']
     more-info: 1516-MA2301
 
 ma2700:
@@ -230,7 +241,6 @@ ma3700:
 ma3006:
     name: Introduction to Coding Theory and Data Compression
     credits: 10
-    requires: ['ma0212']
     more-info: 1516-MA3006
 
 ma3301:
@@ -248,7 +258,7 @@ ma3005:
 ma3502:
     name: Regression Analysis and Experimental Design
     credits: 20
-    requires: ['ma0152']
+    requires: ['ma1501']
     more-info: 1516-MA3502
 
 ma3503:
@@ -275,11 +285,13 @@ ma3900:
 ma3505:
     name: Multivariate Statistics
     credits: 10
+    requires: ['ma2500']
     more-info: 1516-MA3505
 
 ma3504:
     name: Official Statistics
     credits: 10
+    requires: ['ma1501']
     more-info: 1516-MA3504
 
 ma3602:
@@ -297,7 +309,6 @@ ma3601:
 ma3901:
     name: Introduction to secondary school Mathematics teaching
     credits: 20
-    requires: ['ma2500']
     more-info: 1516-MA3901
 
 cm3201:
