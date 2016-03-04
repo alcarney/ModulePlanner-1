@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require 'html/proofer'
 
 task default: %w[help]
