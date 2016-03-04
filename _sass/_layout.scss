@@ -1,0 +1,65 @@
+div.center {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+div.degree {
+    position: absolute;
+    right: 65%;
+    left: 35%;
+    width: 50%;
+}
+
+div.course {
+    h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 350px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+div.provides {
+    display: none;
+}
+
+div.planner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    div.planner {
+        flex-direction: column;
+    }
+}
+
+div.year {
+    flex-grow: 1;
+}
+
+div.module {
+    max-width: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.core {
+    div.module {
+        .requires {
+            display: none;
+        }
+    }
+}
+
+div.optional {
+    div.module {
+        .requires {
+            display: none;
+        }
+    }
+}
