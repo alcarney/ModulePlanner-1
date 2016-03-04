@@ -18,6 +18,10 @@ div.center {
     color: $text-color;
 }
 
+h3 {
+    color: $text-color;
+}
+
 div.course {
     h2 {
         background-color: $red-color;
@@ -45,4 +49,12 @@ div.optional {
     div.selected {
         background-color: $bright-red;
     }
+}
+
+.ok {
+    color: $green-ok;
+}
+
+.warn {
+    color: $red-warn;
 }

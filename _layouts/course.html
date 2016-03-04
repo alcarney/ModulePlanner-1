@@ -9,8 +9,9 @@ layout: default
 <div class="planner">
 
 {% for year in course.modules %}
-  <div class="year">
+  <div class="year" id="year{{forloop.index}}">
     <h1>Year {{forloop.index}}</h1>
+    <h3>Credits chosen: <span class="credit"></span></h3>
 
     <div class="core">
     {% for code in year.core %}
