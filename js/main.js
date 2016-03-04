@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-    //This is for the credit counter
-    var credit = 0;
+    /**
+                    FUNCTIONS
+     */
 
     // This function deselects any modules which depend on a module
     // we just unselected
-    var checkProvides = function(code) {
+    var deselectProvides = function(code) {
 
         // This selects the list of modules this one enables you to study
         var selector = "div.module#" + code + " > div.provides";
@@ -14,11 +15,13 @@ $(document).ready(function() {
         if ($(selector).children().length) {
 
             $(selector).children().each(function () {
-                var m = $(this).attr("class");
+                var mCode = $(this).attr("class");
 
-                if(($("div.module#" + m).hasClass("selected"))) {
-                    $("div.module#" + m).removeClass("selected");
-                    credit = credit - $(selector + " > span.value").text();
+                if(($("div.module#" + mCode).hasClass("selected"))) {
+
+                    // Deselect the module then
+                    toggleModule(mCode);
+
                 }
 
             });
@@ -62,40 +65,147 @@ $(document).ready(function() {
     };
 
     // This function handles toggling your selection of a module
-    var selectModule = function(code) {
+    var toggleModule = function(code) {
 
-        // This selects the module
-        var selector = "div.module#" + code;
+        // This selects the module, based on its code
+        var module = "div.module#" + code;
+
+        // This selects the credit value associated with the module
         var totalcredits = "div.year > span.total-credits";
-        credit = credit + $(selector + " > span.value").text();
 
-        if ($(selector).hasClass("selected")) {
+        // If the module has been selected
+        if ($(module).hasClass("selected")) {
 
-            // If we have already selected the module, deselect it
-            checkProvides(code); // Check to see if provides something
-            $(selector).removeClass("selected");
-            credit = credit - $(selector + " > span.value").text();
+            // If this module is needed by something then they need deselecting also
+            deselectProvides(code);
 
-        } else {
+            // Deselect it and
+            $(module).removeClass("selected");
+
+            // Remove the right number of credits
+            updateYearlyTotal(module, false);
+
+        } else { // Otherwise try selecting the module
+            
 
             // First check to see if the requirements are satisfied
             if (checkRequires(code)) {
 
                 // If so select it
-                $(selector).addClass("selected");
-                $(selector + "> .requires").slideUp("slow");
-                credit = credit - $(selector + " > span.value").text();
-                $("div.year >").text() = "Text";
+                $(module).addClass("selected");
+                $(module + "> .requires").slideUp("slow");
+
+                // Add on the right number of credits
+                updateYearlyTotal(module, true);
+
             }
         }
 
     };
 
+    // This function takes the array of credit totals and updates the
+    // webpage for the user
+    var updateTotals = function(totals) {
+
+        // For each year on the page
+        for (var year in totals) {
+
+            // This selects the credit counter for the current year
+            var counter = "div.year#" + year + " > h3 > span.credit";
+            
+            // Get the number of credits to update the page with
+            var value = totals[year];
+
+            // Update counter text
+            $(counter).text(totals[year]);
+            
+            // If above the threshold warn the user
+            if (value > 120 ) {
+
+                if ($(counter).hasClass("ok")) {
+                    $(counter).removeClass("ok");
+                }
+
+                if (!$(counter).hasClass("warn")) {
+                    $(counter).addClass("warn");
+                }
+            }
+
+            
+            if (value <= 120) {
+
+                if ($(counter).hasClass("warn")) {
+                    $(counter).removeClass("warn");
+                }
+
+                if (!$(counter).hasClass("ok")) {
+                    $(counter).addClass("ok");
+                }
+            }
+            //console.log(year + " : " + totals[year]);
+        }
+    };
+
+    // This function updates the credit value the year, takes two arguments:
+    //      - module: The selection string for the module you are (de)selecting
+    //      - inc:    A bool, true for selection, false for deselection
+    var updateYearlyTotal = function(module, inc) {
+        
+        // Extract the number of credits it's worth
+        var numCredits = $(module + " > div.group > aside > span.credit").text();
+        //console.log("Num credits: " + numCredits);
+
+        // Find out what year you belong to and add your credit total
+        var parent = $(module).parents("div.year").attr("id");
+        //console.log(parent);
+
+        if (inc) {
+            creditTotals[parent] += parseInt(numCredits);
+        } else {
+            creditTotals[parent] -= parseInt(numCredits);
+        }
+    };
+
+    /**
+                      LOGIC BEGINS HERE
+     */
+
+
+    // This holds the number of selected credits for each year
+    var creditTotals = [];
+
+    // Look for all the years on the page and intialise the credit array
+    $("div.year").each(function () {
+
+        // Start with zero credits for the year
+        var coreCredits = 0;
+
+        // For each module in the core
+        $(this).children("div.core").children().each(function () {
+            //console.log($(this).find("div.group > aside > span.credit").text());
+
+            // Find the number of credits it's worth
+            var moduleCredit =  $(this).find("div.group > aside > span.credit").text();
+
+            // Add that to the total for the year
+            coreCredits += parseInt(moduleCredit);
+        });
+
+        // Set the credits for that year
+        creditTotals[$(this).attr("id")] = coreCredits;
+    });
+
+    // Update the credit counters with the initial core credits
+    updateTotals(creditTotals);
+
+
+    // This set's up each optional module with the ability to toggle it
     $("div.optional > div.module").click(
 
         // For optional modules, add the ability to (de)select them.
         function() {
             var code = $(this).attr("id");
-            selectModule(code);
+            toggleModule(code);
+            updateTotals(creditTotals);
         });
 });

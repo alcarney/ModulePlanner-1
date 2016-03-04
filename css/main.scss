@@ -8,6 +8,9 @@ $red-color: #990000;
 $grey-color: #aaaaaa;
 $bright-red: #ff0000;
 
+$red-warn: $bright-red;
+$green-ok: #00cc00;
+
 @import "_layout",
         "_style"
 
