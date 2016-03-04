@@ -8,10 +8,10 @@ h1 {
 
 a {
     color: $background-color;
+}
 
-    .site-title {
-        color: $text-color;
-    }
+a.site-title {
+    color: $text-color;
 }
 
 div.center {
