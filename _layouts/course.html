@@ -11,6 +11,7 @@ layout: default
 {% for year in course.modules %}
   <div class="year">
     <h1>Year {{forloop.index}}</h1>
+    <h3>Credits chosen: <span class="total-credits"></span></h3>
 
     <div class="core">
     {% for code in year.core %}

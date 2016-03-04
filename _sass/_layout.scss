@@ -22,6 +22,20 @@ div.course {
     }
 }
 
+div.group{
+    aside {
+        float: right;
+        margin: 0 1.5%;
+        width: 30%;
+    }
+}
+
+div.group.a {
+      float: left;
+      margin: 0 1.5%;
+      width: 63%;
+}
+
 div.provides {
     display: none;
 }
