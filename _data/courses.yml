@@ -1,4 +1,4 @@
-bsc:
+- short: bsc
   name: BSc Mathematics
   modules:
       - core: ['ma1001', 'ma1004', 'ma1005', 'ma1007', 'ma1500', 'ma1006', 'ma1003']
@@ -9,39 +9,39 @@ bsc:
 
       - optional: ['ma0332', 'ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367',	 'ma3003', 'ma3004', 'ma0322', 'ma3501', 'ma3700', 'ma3006', 'ma3301', 'ma3005', 'ma3502', 'ma3503', 'ma3303', 'ma3304', 'ma3900', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'cm3201', 'cm3111']
 
-mors:
-    name: Mathematics and its Applications
-    modules:
-        - core: ['ma1001', 'ma1004', 'ma1005', 'ma1007', 'ma1500', 'ma1006', 'ma1003', 'ma1501']
-          optional: ['ma0111', 'ma1300']
+- short: mors
+  name: Mathematics and its Applications
+  modules:
+      - core: ['ma1001', 'ma1004', 'ma1005', 'ma1007', 'ma1500', 'ma1006', 'ma1003', 'ma1501']
+        optional: ['ma0111', 'ma1300']
 
-        - core: ['ma2004', 'ma0261', 'ma2001', 'ma2002', 'ma2500', 'ma2003']
-          optional: ['ma0212', 'ma0232', 'ma0276', 'ma0291', 'ma2700', 'ma0221', 'ma0216', 'ma2005', 'ma2501', 'ma0213']
+      - core: ['ma2004', 'ma0261', 'ma2001', 'ma2002', 'ma2500', 'ma2003']
+        optional: ['ma0212', 'ma0232', 'ma0276', 'ma0291', 'ma2700', 'ma0221', 'ma0216', 'ma2005', 'ma2501', 'ma0213']
 
-        - optional: ['ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367', 'ma3003', 'ma3004', 'ma3700', 'ma3501', 'ma0322', 'ma3006', 'ma3301', 'ma3502', 'ma3503', 'ma3304', 'ma3900', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'ma3303']
+      - optional: ['ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367', 'ma3003', 'ma3004', 'ma3700', 'ma3501', 'ma0322', 'ma3006', 'ma3301', 'ma3502', 'ma3503', 'ma3304', 'ma3900', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'ma3303']
 
-mapps:
-    name: Mathematics, Operational Research and Statistic
-    modules:
-        - core: ['ma1001', 'ma1004', 'ma1500', 'ma1005', 'ma1007', 'ma1006', 'ma1003']
-          optional: ['ma1300', 'ma0111', 'ma1501']
+- short: mapps
+  name: Mathematics, Operational Research and Statistic
+  modules:
+      - core: ['ma1001', 'ma1004', 'ma1500', 'ma1005', 'ma1007', 'ma1006', 'ma1003']
+        optional: ['ma1300', 'ma0111', 'ma1501']
 
-        - core: ['ma2004', 'ma2001', 'ma2301', 'ma2002', 'ma0232', 'ma2003']
-          optional: ['ma0212', 'ma0213', 'ma0216', 'ma0221', 'ma0235', 'ma0261', 'ma0276', 'ma2005', 'ma2300', 'ma2500', 'ma2501', 'ma2700']
+      - core: ['ma2004', 'ma2001', 'ma2301', 'ma2002', 'ma0232', 'ma2003']
+        optional: ['ma0212', 'ma0213', 'ma0216', 'ma0221', 'ma0235', 'ma0261', 'ma0276', 'ma2005', 'ma2300', 'ma2500', 'ma2501', 'ma2700']
 
-        - optional: ['ma0332', 'ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367', 'ma3003', 'ma3004', 'ma3700', 'ma3501', 'ma0322', 'ma3006', 'ma3301', 'ma3005', 'ma3502', 'ma3503', 'ma3303', 'ma3304', 'ma3900', 'cm3201', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'cm3111']
+      - optional: ['ma0332', 'ma0358', 'ma0391', 'ma0392', 'ma3000', 'ma0367', 'ma3003', 'ma3004', 'ma3700', 'ma3501', 'ma0322', 'ma3006', 'ma3301', 'ma3005', 'ma3502', 'ma3503', 'ma3303', 'ma3304', 'ma3900', 'cm3201', 'ma3505', 'ma3504', 'ma3602', 'ma3601', 'ma3901', 'cm3111']
 
-mmath:
-    name: MMath Mathematics
-    modules:
-        - core: ['ma1004', 'ma1001', 'ma1500', 'ma0111', 'ma1005', 'ma1007', 'ma1006', 'ma1003']
-          optional: ['ma1300', 'ma1501']
+- short: mmath
+  name: MMath Mathematics
+  modules:
+     - core: ['ma1004', 'ma1001', 'ma1500', 'ma0111', 'ma1005', 'ma1007', 'ma1006', 'ma1003']
+       optional: ['ma1300', 'ma1501']
 
-        - core: ['ma0221', 'ma0212', 'ma2004', 'ma2001', 'ma2002', 'ma2301', 'ma2003']
-          optional: ['ma0232', 'ma0261', 'ma2300', 'ma0216', 'ma0235', 'ma2005', 'ma2500', 'ma0213', 'ma2700']
+     - core: ['ma0221', 'ma0212', 'ma2004', 'ma2001', 'ma2002', 'ma2301', 'ma2003']
+       optional: ['ma0232', 'ma0261', 'ma2300', 'ma0216', 'ma0235', 'ma2005', 'ma2500', 'ma0213', 'ma2700']
 
-        - core: ['ma3003', 'ma3005', 'ma3303']
-          optional: ['ma0358', 'ma0332', 'ma3501', 'ma3301', 'ma3304', 'ma0367', 'ma3004', 'ma3006', 'ma3000', 'ma3602']
+     - core: ['ma3003', 'ma3005', 'ma3303']
+       optional: ['ma0358', 'ma0332', 'ma3501', 'ma3301', 'ma3304', 'ma0367', 'ma3004', 'ma3006', 'ma3000', 'ma3602']
 
-        - core: ['ma4900']
-          optional: ['ma4001', 'ma4008', 'ma4007', 'ma4009',	'ma4901', 'ma4012', 'ma4011', 'ma4013']
+     - core: ['ma4900']
+       optional: ['ma4001', 'ma4008', 'ma4007', 'ma4009',	'ma4901', 'ma4012', 'ma4011', 'ma4013']

@@ -1,4 +1,8 @@
-{% assign module = site.data.modules[code] %}
+{% for m in site.data.modules %}
+  {% if m.code == code %}
+    {% assign module = m %}
+  {% endif %}
+{% endfor %}
 
 <h2>{{module.name}}</h2>
 <div class="group">
@@ -18,7 +22,12 @@
 <p class="requires">Requires</p>
 <ul class="requires">
   {% for c in module.requires %}
-    <li class="{{c}}">{{site.data.modules[c].name}}</li>
+    {% for m in site.data.modules %}
+      {% if m.code == c %}
+        {% assign required = m %}
+      {% endif %}
+    {% endfor %}
+    <li class="{{c}}">{{required.name}}</li>
   {% endfor %}
 </ul>
 {% endif %}
