@@ -2,7 +2,7 @@
 
 A website to help students choose their modules
 
-See this [codepen](http://codepen.io/alcarney/pen/VaYYgp?editors=1111) for a possible implementation
+Implementation based on this [codepen](http://codepen.io/alcarney/pen/VaYYgp?editors=1111)
 
 Installation
 ============
@@ -12,6 +12,7 @@ To run this locally on your machine first fork this repository and then clone yo
 $ git clone https://github.com/YOUR-NAME/ModulePlanner.git
 ```
 then run `jekyll serve` whilst in your clone
+
 
 Contributing
 ============

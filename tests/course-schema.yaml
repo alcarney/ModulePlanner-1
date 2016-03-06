@@ -1,0 +1,30 @@
+type: seq
+sequence:
+  - type: map
+    required: yes
+    mapping:
+      "short":
+        type: str
+        required: yes
+      "name":
+        type: str
+        required: yes
+      "modules":
+        type: seq
+        sequence:
+          - type: map
+            required: yes
+            mapping:
+              "core":
+                type: seq
+                required: no
+                sequence:
+                  - type: str
+                    pattern: "/[a-z]{2}[0-9]{4}/"
+              "optional":
+                type: seq
+                required: yes
+                sequence:
+                  - type: str
+                    pattern: "/[a-z]{2}[0-9]{4}/"
+

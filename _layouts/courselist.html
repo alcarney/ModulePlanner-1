@@ -8,7 +8,7 @@ layout: default
     {% for course in site.data.courses %}
 
        <div class="course">
-          <h2><a href="{{course[0]}}.html">{{course[1].name}}</a></h2>
+          <h2><a href="{{course.short}}.html">{{course.name}}</a></h2>
        </div>
        
     {% endfor %}

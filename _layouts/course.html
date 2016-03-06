@@ -2,7 +2,11 @@
 layout: default
 ---
 
-{% assign course = site.data.courses[page.short] %}
+{% for c in site.data.courses %}
+  {% if c.short == page.short %}
+    {% assign course = c %}
+  {% endif %}
+{% endfor %}
 
 {% include header.html %}
 
