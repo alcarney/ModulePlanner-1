@@ -108,7 +108,7 @@
 
 - code: ma0261
   name: Operational Research
-  credits: 10
+  credits: 20
   provides: ['ma3602', 'ma3601']
   requires: ['ma1500']
   more-info: 1516-MA0261
@@ -240,7 +240,7 @@
 
 - code: ma3006
   name: Introduction to Coding Theory and Data Compression
-  credits: 10
+  credits: 20
   more-info: 1516-MA3006
 
 - code: ma3301

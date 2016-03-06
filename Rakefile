@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'html/proofer'
+require 'html-proofer'
 require 'kwalify'
 require 'jekyll'
 
@@ -61,7 +61,7 @@ task :test do
 
   Jekyll::Site.new(conf).process
 
-  HTML::Proofer.new("./_site",
-                    { :check_html => true,
-                      :only_4xx => true}).run()
+  HTMLProofer.check_directory("./_site",
+                              { :check_html => true,
+                                :only_4xx => true}).run
 end
