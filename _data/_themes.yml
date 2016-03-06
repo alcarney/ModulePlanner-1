@@ -1,0 +1,5 @@
+- name: beta1 theme
+  shortname: main
+
+- name: dark theme
+  shortname: dark

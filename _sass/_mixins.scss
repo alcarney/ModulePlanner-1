@@ -1,0 +1,66 @@
+/**
+ * This is a mixin, it's basically a function which will return css.
+
+   This one tests to see what the size of the display is and whatever css
+   we contain within it when we "call" it will be activated if the device
+   is satisfied
+ */
+@mixin if-device($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin column-count($n) {
+    -webkit-column-count: $n;
+       -moz-column-count: $n;
+            column-count: $n;
+}
+
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius...) {
+  -webkit-border-bottom-left-radius: $radius;
+     -moz-border-bottom-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius...) {
+  -webkit-border-bottom-right-radius: $radius;
+     -moz-border-bottom-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius...) {
+  -webkit-border-top-right-radius: $radius;
+     -moz-border-top-right-radius: $radius;
+          border-top-right-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius...) {
+  -webkit-border-top-left-radius: $radius;
+     -moz-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+}
+
+@mixin box-shadow($style...) {
+    -webkit-box-shadow: $style;
+       -moz-box-shadow: $style;
+            box-shadow: $style;         
+}
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+            transition: $transition;
+}
+
+@mixin linear-gradient($grad...) {
+    background:  -webkit-linear-gradient($grad);
+    background:  -moz-linear-gradient($grad);
+    background:   linear-gradient($grad);
+}
