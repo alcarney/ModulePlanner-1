@@ -38,7 +38,7 @@
 - code: ma1300
   name: Mechanics I
   credits: 10
-  provides: ['ma2300', 'ma0235']
+  provides: ['ma0235', 'ma2300']
   more-info: 1516-MA1300
 
 - code: ma0111
@@ -149,6 +149,7 @@
 - code: ma2500
   name: Foundations of Probability and Statistics
   credits: 20
+  provides: ['ma2501', 'ma0367', 'ma3501', 'ma3503', 'ma3505']
   requires: ['ma1500', 'ma1501']
   more-info: 1516-MA2500
 
