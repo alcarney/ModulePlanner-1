@@ -40,13 +40,6 @@ body {
     }
 }
 
-div.course {
-    h2 {
-        background-color: $cardiff-dark;
-        font-size: 18px;
-    }
-}
-
 div.degree {
     min-width: 400px;
     div.course {
@@ -56,6 +49,13 @@ div.degree {
         padding-left: 10px;
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
+    }
+}
+
+div.course {
+    h2 {
+        background-color: $cardiff-dark;
+        font-size: 18px;
     }
 }
 

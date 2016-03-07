@@ -3,3 +3,6 @@
 
 - name: dark theme
   shortname: dark
+
+- name: light theme
+  shortname: light
