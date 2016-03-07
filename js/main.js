@@ -199,7 +199,7 @@ $(document).ready(function() {
     updateTotals(creditTotals);
 
 
-    // This set's up each optional module with the ability to toggle it
+    // This sets up each optional module with the ability to toggle it
     $("div.optional > div.module").click(
 
         // For optional modules, add the ability to (de)select them.
@@ -208,4 +208,15 @@ $(document).ready(function() {
             toggleModule(code);
             updateTotals(creditTotals);
         });
+
+    // This sets up the clear button with its ability to deselect everything
+    $("div.wrapper > h2.clear").click(function() {
+        $("div.optional > div.module").each(function() {
+            if ($(this).hasClass("selected")) {
+                toggleModule($(this).attr("id"));
+            }
+        });
+
+        updateTotals(creditTotals);
+    });
 });

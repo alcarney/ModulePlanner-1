@@ -2,36 +2,42 @@ body {
     background-color: $background-color;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     color: $text-color;
 }
 
 a {
     color: $background-color;
+
+    &.site-title {
+        color: $text-color;
+    }
 }
 
-a.site-title {
-    color: $text-color;
+div.wrapper {
+
+    h1 {
+        padding: 10px;
+    }
+    h2.clear {
+        padding: 20px;
+        background-color: $red-color;
+    }
 }
 
 div.center {
     color: $text-color;
 }
 
-h3 {
-    color: $text-color;
-}
-
 div.course {
     h2 {
         background-color: $red-color;
-        font-size: 18px;
     }
 }
 
 div.module {
     h2 {
-        font-size: 18px;
+        color: $black;
     }
 }
 
