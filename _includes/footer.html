@@ -1,26 +1,15 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+    <div class="group">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+        <aside>
+            <p>Change Theme:
+            <select id="theme-chooser">
+                {% for theme in site.data.themes %}
+                <option value="{{theme.shortname}}">{{theme.name}}</option>
+                {% endfor %}
+            </select></p>
+        </aside>
     </div>
-
-  </div>
 
 </footer>

@@ -1,5 +1,19 @@
 <header class="site-header">
-    <a class="site-title" href="{{ site.baseurl }}/">Change your degree</a>
+    <div class="group">
+
+        <a class="site-title" href="{{ site.baseurl }}/">Change your degree</a>
+
+        <aside>
+            <p>Change Theme:
+            <select id="theme-chooser">
+                {% for theme in site.data.themes %}
+                <option value="{{theme.shortname}}">{{theme.name}}</option>
+                {% endfor %}
+            </select></p>
+        </aside>
+
+    </div>
+
     <div class="wrapper">
         <h1>{{course.name}}</h1>
         <h2 class="clear">Clear Selected</h2>
