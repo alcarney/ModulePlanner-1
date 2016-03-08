@@ -15,14 +15,15 @@ $green-ok: #00cc00;
 // Text
 $fonts: Arial, Helvetica, sans-serif;
 $title-font-size: 36px;
+$module-font-size: 18px;
 $text-color: $white;
 $text-shadow-style: 1px 1px $black;
 
 // Backgrounds
-$bg-d: #111;
+$bg-d: #7c7750;
 $bg-l: lighten($bg-d, 1%);
 $background-style: 45deg, $bg-d 25%, $bg-l 25%, $bg-l 50%, $bg-d 50%, $bg-d 75%, $bg-l 75%;
-$middle-bg: #222;
+$middle-bg: #5d5a43;
 
 // Other fancy stuff
 $corner-radius: 10px;

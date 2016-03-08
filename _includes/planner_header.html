@@ -4,12 +4,6 @@
         <a class="site-title" href="{{ site.baseurl }}/">Change your degree</a>
 
         <aside>
-            {% for theme in site.data.themes %}
-            <div id="{{theme.shortname}}" class="themes">
-                <p>Theme: {{theme.name}}</p>
-            </div>
-            {% endfor%}
-
             <p>Change Theme:
             <select id="theme-chooser">
                 {% for theme in site.data.themes %}

@@ -1,5 +1,4 @@
 * {
-    font-family: $fonts;
 
     h1 {
         font-size: $title-font-size;
@@ -7,17 +6,43 @@
 }
 
 header.site-header {
-
     background-color: $middle-bg;
     border-bottom: $menu-border-style;
     @include box-shadow($shadow-style);
 
-    .menu-item,
-    .menu-name {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        list-style: none;
-        border-left: $menu-border-style;
+    div.group{
+
+        a {
+            color: $black;
+
+            &:hover {
+                color: $cardiff-dark;
+                font-style: italic;
+            }
+        }
+
+        aside {
+            color: $black;
+        }
+    }
+
+}
+
+div.wrapper {
+
+    h1 {
+        color: $black;
+        font-size: 2em;
+    }
+
+    h2.clear {
+        color: $black;
+        margin-top: 20px;
+        @include box-style($middle-bg);
+        padding-left: 10px;
+        @include border-radius($corner-radius);
+        background-color: $cardiff-dark;
+        cursor:pointer;
     }
 }
 
@@ -40,8 +65,17 @@ body {
     }
 }
 
+div.course {
+
+    h2 {
+        background-color: $cardiff-dark;
+        font-size: 18px;
+    }
+}
+
 div.degree {
     min-width: 400px;
+
     div.course {
         width: 350px;
         margin-top: 20px;
@@ -49,23 +83,20 @@ div.degree {
         padding-left: 10px;
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
+        cursor:pointer;
     }
 }
 
-div.course {
-    h2 {
-        background-color: $cardiff-dark;
-        font-size: 18px;
-    }
-}
 
 div.module {
+
     h2 {
         font-size: 18px;
     }
 }
 
 div.core {
+
     div.module {
         margin-top: 20px;
         @include box-style($middle-bg);
@@ -80,20 +111,23 @@ div.core {
 }
 
 div.optional {
+
     div.module {
         margin-top: 20px;
         @include box-style($middle-bg);
         padding-left: 30px;
         @include border-radius($corner-radius);
         background-color: $middle-bg;
+        cursor:pointer;
 
         h2 {
-            color: $cardiff-bright;
+            color: $black;
         }
     }
 
     div.selected {
         background-color: $cardiff-bright;
+        cursor:pointer;
 
         h2 {
             color: $black;
@@ -107,4 +141,21 @@ div.optional {
 
 .warn {
     color: $red-warn;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: $middle-bg;
+    border-top: $menu-border-style;
+
+    div.group{
+
+        aside {
+            color: $black;
+        }
+    }
 }

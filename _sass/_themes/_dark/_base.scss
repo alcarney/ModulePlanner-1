@@ -1,5 +1,4 @@
 * {
-    font-family: $fonts;
 
     h1 {
         font-size: $title-font-size;
@@ -11,13 +10,23 @@ header.site-header {
     background-color: $middle-bg;
     border-bottom: $menu-border-style;
     @include box-shadow($shadow-style);
+}
 
-    .menu-item,
-    .menu-name {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        list-style: none;
-        border-left: $menu-border-style;
+div.wrapper {
+
+    h1 {
+        color: $white;
+        font-size: 2em;
+    }
+
+    h2.clear {
+        color: $white;
+        margin-top: 20px;
+        @include box-style($middle-bg);
+        padding-left: 10px;
+        @include border-radius($corner-radius);
+        background-color: $cardiff-dark;
+        cursor:pointer;
     }
 }
 
@@ -56,6 +65,7 @@ div.degree {
         padding-left: 10px;
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
+        cursor:pointer;
     }
 }
 
@@ -86,6 +96,7 @@ div.optional {
         padding-left: 30px;
         @include border-radius($corner-radius);
         background-color: $middle-bg;
+        cursor:pointer;
 
         h2 {
             color: $cardiff-bright;
@@ -94,6 +105,7 @@ div.optional {
 
     div.selected {
         background-color: $cardiff-bright;
+        cursor:pointer;
 
         h2 {
             color: $black;
@@ -107,4 +119,20 @@ div.optional {
 
 .warn {
     color: $red-warn;
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: $middle-bg;
+    border-top: $menu-border-style;
+
+    div.group{
+
+        aside {
+            color: $white;
+        }
+    }
 }
