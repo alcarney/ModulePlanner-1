@@ -1,5 +1,5 @@
-- name: dark theme
+- name: Dark 
   shortname: dark
 
-- name: light theme
+- name: Light 
   shortname: light
