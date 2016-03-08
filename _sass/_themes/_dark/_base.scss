@@ -27,10 +27,15 @@ div.wrapper {
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
         cursor:pointer;
+
+        &:active {
+            @include box-shadow($inset-shadow-style);
+        }
     }
 }
 
 body {
+    margin: 0;
     @include linear-gradient($background-style);
     background-size: 15px 15px;
     color: $text-color;
@@ -66,6 +71,10 @@ div.degree {
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
         cursor:pointer;
+
+        &:active {
+            @include box-shadow($inset-shadow-style);
+        }
     }
 }
 
@@ -97,6 +106,10 @@ div.optional {
         @include border-radius($corner-radius);
         background-color: $middle-bg;
         cursor:pointer;
+
+        &:active {
+            @include box-shadow($inset-shadow-style);
+        }
 
         h2 {
             color: $cardiff-bright;
