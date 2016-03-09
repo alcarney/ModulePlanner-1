@@ -2,14 +2,14 @@
 
     <div class="group">
 
-        <aside>
-            <p>Change Theme:
+        <center>
+            Change Theme:
             <select id="theme-chooser">
                 {% for theme in site.data.themes %}
-                <option value="{{theme.shortname}}">{{theme.name}}</option>
+                    <option value="{{theme.shortname}}">{{theme.name}}</option>
                 {% endfor %}
-            </select></p>
-        </aside>
+            </select>
+        </center>
     </div>
 
 </footer>
