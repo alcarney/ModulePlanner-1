@@ -1,4 +1,5 @@
-# ModulePlanner [![Build Status](https://travis-ci.org/Moduleplanner/Moduleplanner.github.io.svg?branch=master)](https://travis-ci.org/Moduleplanner/Moduleplanner.github.io)
+# ModulePlanner [![Build Status](https://travis-ci.org/Moduleplanner/Moduleplanner.github.io.svg?branch=master)](https://travis-ci.org/Moduleplanner/Moduleplanner.github.io) [![Documentation Status](https://readthedocs.org/projects/moduleplannergithubio/badge/?version=latest)](http://moduleplannergithubio.readthedocs.org/en/latest/?badge=latest)
+
 
 A website to help students choose their modules
 
@@ -13,6 +14,10 @@ $ git clone https://github.com/YOUR-NAME/ModulePlanner.git
 ```
 then run `jekyll serve` whilst in your clone
 
+Documentation
+============
+
+The documentation for this repository can be found [here.](http://moduleplannergithubio.readthedocs.org)
 
 Contributing
 ============
