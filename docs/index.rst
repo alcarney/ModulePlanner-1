@@ -1,4 +1,6 @@
-* Module Planner
+**************
+Module Planner
+**************
 
 The module planner is a jekyll website combined with some javascript magic which
 will present the user with an interactive graph of modules for their selected
