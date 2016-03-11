@@ -78,18 +78,17 @@ body {
 div.course {
     h2 {
         background-color: $cardiff-dark;
-        font-size: 18px;
+        font-size: 21px;
     }
 }
 
 div.degree {
 
     div.course {
-        width: 350px;
+        width: auto;
         margin-top: 20px;
         padding: 10px !important;
         @include box-style($middle-bg);
-        padding-left: 10px;
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
         cursor:pointer;
