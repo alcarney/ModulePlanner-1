@@ -34,12 +34,6 @@ div.group{
         margin: 0 1.5%;
         width: 30%;
     }
-
-    center1 {
-        float: right;
-        margin: 0 1%;
-        width: 30%;
-    }
 }
 
 div.group.a {
@@ -58,10 +52,15 @@ div.planner {
     justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     div.wrapper,
     div.planner {
         flex-direction: column;
+    }
+
+    div.degree{
+      min-width: 100%;
+      position: static;
     }
 }
 
@@ -93,4 +92,9 @@ div.optional {
             display: none;
         }
     }
+}
+
+div.setting{
+    float: left;
+    height: 20px;
 }
