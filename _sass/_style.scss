@@ -55,8 +55,14 @@ body {
     background-size: 15px 15px;
     color: $text-color;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h4, h5, h6 {
         color: darken($cardiff-bright, 15%);
+    }
+
+    h3 {
+        margin-top: 0;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
 
     a {
@@ -99,6 +105,7 @@ div.module {
 
     h2 {
         font-size: 18px;
+        margin-bottom: 5px;
     }
 }
 
@@ -111,7 +118,7 @@ div.core {
         @include border-radius($corner-radius);
         background-color: $cardiff-dark;
 
-        h2 {
+        h2, h3 {
             color: $black;
         }
     }
@@ -131,7 +138,7 @@ div.optional {
             @include box-shadow($inset-shadow-style);
         }
 
-        h2 {
+        h2, h3 {
             color: $option-slected;
         }
     }
@@ -140,7 +147,7 @@ div.optional {
         background-color: $cardiff-bright;
         cursor:pointer;
 
-        h2 {
+        h2, h3 {
             color: $black;
         }
     }
@@ -153,6 +160,7 @@ div.optional {
 .warn {
     color: $red-warn;
 }
+
 footer {
     position: fixed;
     right: 0;
