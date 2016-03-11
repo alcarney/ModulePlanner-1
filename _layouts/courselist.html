@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<div class="settings">
+        Change Theme:
+        <select id="theme-chooser">
+            {% for theme in site.data.themes %}
+                <option value="{{theme.shortname}}">{{theme.name}}</option>
+            {% endfor %}
+        </select>
+</div>
+
+
 <div class="degree">
     <h1>Please choose your degree scheme</h1>
 
@@ -13,6 +23,3 @@ layout: default
 
     {% endfor %}
 </div>
-
-
-{% include footer.html %}

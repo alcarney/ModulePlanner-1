@@ -83,7 +83,6 @@ div.course {
 }
 
 div.degree {
-    min-width: 400px;
 
     div.course {
         width: 350px;
@@ -161,19 +160,6 @@ div.optional {
     color: $red-warn;
 }
 
-footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 20px;
-    background-color: $middle-bg;
-    border-top: $menu-border-style;
-
-    div.group{
-
-        center {
-            color: $link;
-        }
-    }
+div.setting {
+    color: $link;
 }
