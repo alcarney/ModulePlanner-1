@@ -1,6 +1,3 @@
-License
-=======
-
 The MIT license (MIT)
 
 Copyright (c) 2016 <Adam Pohl, Alex Carney>

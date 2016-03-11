@@ -4,17 +4,22 @@ div.wrapper {
     justify-content: space-around;
 }
 
-div.center {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-}
-
 div.degree {
     position: absolute;
-    right: 65%;
-    left: 35%;
-    width: 50%;
+    left: 30%;
+    width: 40%;
+
+    h1{
+        text-align: center;
+    }
+
+    div.course {
+        h2 {
+            flex-direction: row;
+            padding: none;
+            max-width: none;
+        }
+    }
 }
 
 div.course {
@@ -62,6 +67,12 @@ div.planner {
       min-width: 100%;
       position: static;
     }
+
+    div.degree {
+        div.course{
+            width: 100%;
+        }
+    }
 }
 
 div.year {
@@ -94,7 +105,6 @@ div.optional {
     }
 }
 
-div.setting{
-    float: left;
+div.topleft{
     height: 20px;
 }
