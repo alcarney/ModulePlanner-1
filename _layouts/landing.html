@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="topleft">
+        Change Theme:
+        <select id="theme-chooser">
+            {% for theme in site.data.themes %}
+                <option value="{{theme.shortname}}">{{theme.name}}</option>
+            {% endfor %}
+        </select>
+</div>
+
+<div class="landing">
+    <img src="/res/Uni-Logo.png" alt="University Logo"/>
+    <h1>School of Mathematics</h1>
+</div>
+
+<div class="degree">
+    <div class="course">
+        <h2><a href="degreeschemes.html">Select your degree scheme</a></h2>
+    </div>
+</div>
