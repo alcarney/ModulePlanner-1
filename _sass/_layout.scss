@@ -9,8 +9,18 @@ div.degree {
     left: 30%;
     width: 40%;
 
+    img {
+        float: left;
+        width: 20%;
+    }
+
     h1{
+        margin-left: 22%;
+    }
+
+    h2 {
         text-align: center;
+        font-size: 25px;
     }
 
     div.course {
@@ -49,17 +59,7 @@ div.group.a {
 
 
 div.landing {
-    padding-top: 50px;
     text-align: center;
-
-    img {
-        padding: 10px;
-        width: auto;
-    }
-
-    h1 {
-        height: 30px;
-    }
 }
 
 div.provides {
