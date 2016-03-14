@@ -17,12 +17,6 @@ sequence:
         type: str
         required: yes
         pattern: "/[0-9]{4}-[A-Z]{2}[0-9]{4}/"
-      "provides":
-        type: seq
-        required: no
-        sequence:
-          - type: str
-            pattern: "/[a-z]{2}[0-9]{4}/"
       "requires":
         type: seq
         required: no

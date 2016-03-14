@@ -21,7 +21,6 @@
 - code: ma1500
   name: Introduction to Probability Theory
   credits: 10
-  provides: ['ma1501', 'ma0261', 'ma2500']
   more-info: 1516-MA1500
 
 - code: ma1006
@@ -32,38 +31,32 @@
 - code: ma1003
   name: Computing for Mathematics
   credits: 20
-  provides: ['ma0276']
   more-info: 1516-MA1003
 
 - code: ma1300
   name: Mechanics I
   credits: 10
-  provides: ['ma0235', 'ma2300']
   more-info: 1516-MA1300
 
 - code: ma0111
   name: Elementary Number Theory I
   credits: 10
-  provides: ['ma0216']
   more-info: 1516-MA0111
 
 - code: ma1501
   name: Statistical Inference
   credits: 10
   requires: ['ma1500']
-  provides: ['ma2500', 'ma2501', 'ma3502', 'ma3504']
   more-info: 1516-MA1501
 
 - code: ma0221
   name: Analysis III
   credits: 10
-  provides: ['ma3005']
   more-info: 1516-MA0221
 
 - code: ma0212
   name: Linear Algebra
   credits: 10
-  provides: ['ma0322', 'ma3005']
   more-info: 1516-MA0212
 
 - code: ma2004
@@ -84,7 +77,6 @@
 - code: ma2003
   name: Complex Analysis
   credits: 10
-  provides: ['ma3000']
   more-info: 1516-MA2003
 
 - code: ma0216
@@ -96,20 +88,17 @@
 - code: ma0232
   name: Modelling with Differential Equations
   credits: 10
-  provides: ['ma3301']
   more-info: 1516-MA0232
 
 - code: ma0235
   name: Elementary Fluid Dynamics
   credits: 10
-  provides: ['ma0332']
   requires: ['ma1300', 'ma2301']
   more-info: 1516-MA0235
 
 - code: ma0261
   name: Operational Research
   credits: 20
-  provides: ['ma3602', 'ma3601']
   requires: ['ma1500']
   more-info: 1516-MA0261
 
@@ -128,7 +117,6 @@
 - code: ma2301
   name: Vector Calculus
   credits: 10
-  provides: ['ma0235', 'ma0332']
   more-info: 1516-MA2301
 
 - code: ma2700
@@ -149,7 +137,6 @@
 - code: ma2500
   name: Foundations of Probability and Statistics
   credits: 20
-  provides: ['ma2501', 'ma0367', 'ma3501', 'ma3503', 'ma3505']
   requires: ['ma1500', 'ma1501']
   more-info: 1516-MA2500
 

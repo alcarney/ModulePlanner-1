@@ -1,7 +1,16 @@
 {% for m in site.data.modules %}
+  {% if m.requires contains code %}
+    {% if provides %}
+       {% assign provides = provides | append: " " | append: m.code %}
+    {% else %}
+       {% assign provides = m.code %}
+    {% endif %}
+  {% endif %}
+
   {% if m.code == code %}
     {% assign module = m %}
   {% endif %}
+
 {% endfor %}
 
 <h2>{{module.name}}</h2>
@@ -12,12 +21,15 @@
     <aside>Credits:<span class="credit">{{module.credits}}</span></aside>
 </div>
 
-{% if module.provides %}
+{% if provides %}
 <div class="provides">
-  {% for c in module.provides %}
+  {% assign provide_list = provides | split:" " %}
+  {% for c in provide_list %}
    <span class="{{c}}"></span>
   {% endfor %}
 </div>
+
+{% assign provides = false %}
 {% endif %}
 
 {% if module.requires %}
