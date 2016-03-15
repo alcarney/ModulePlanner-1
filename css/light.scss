@@ -10,16 +10,20 @@ $link: $black;
 $cardiff-dark: #990000;
 $cardiff-bright: #ff0000;
 $cardiff-complement: #111;
-$red-warn: $cardiff-bright;
+$red-warn: #ff0000;
 $green-ok: #00cc00;
-$option-slected: $black;
+$hover: #00cc00;
+$option-slected: #000000;
+$clear: #990000;
+$degree: #990000;
+
 
 // Text
 $fonts: Arial, Helvetica, sans-serif;
 $title-font-size: 36px;
 $module-font-size: 18px;
 $text-color: $white;
-$text-shadow-style: 1px 1px $black;
+$text-shadow-style: 1px 1px #000000;
 
 // Backgrounds
 $bg-d: #7c7750;
@@ -31,14 +35,14 @@ $middle-bg: #5d5a43;
 $corner-radius: 10px;
 $shadow-style: 5px 5px 3px $black;
 $inset-shadow-style: inset $shadow-style;
-$menu-border-style: 1px solid $cardiff-bright;
+$menu-border-style: 1px solid #ff0000;
 
 $code-border-style: solid 1px $white ;
 
 @mixin box-style($bg-color) {
-        padding: 20px;
-        background-color: $bg-color;
-        @include box-shadow($shadow-style);
+    padding: 20px;
+    background-color: $bg-color;
+    @include box-shadow($shadow-style);
 }
 
 @import "_layout",

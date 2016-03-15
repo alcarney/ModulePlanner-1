@@ -14,7 +14,7 @@ div.degree {
         width: 20%;
     }
 
-    h1{
+    h1 {
         margin-left: 22%;
     }
 
@@ -26,37 +26,22 @@ div.degree {
     div.course {
         h2 {
             flex-direction: row;
-            padding: none;
             max-width: none;
+            margin: 5px;
         }
     }
 }
 
-div.course {
-    h2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 350px;
-        padding: 0;
-        margin: 5px;
-    }
-}
-
-div.group{
+div.group {
     aside {
-        float: right;
         margin: 0 1.5%;
         width: 30%;
     }
+    a {
+        margin: 0 1.5%;
+        width: 63%;
+    }
 }
-
-div.group.a {
-      float: left;
-      margin: 0 1.5%;
-      width: 63%;
-}
-
 
 div.landing {
     text-align: center;
@@ -73,7 +58,10 @@ div.planner {
 }
 
 @media screen and (max-width: 640px) {
-    div.wrapper,
+
+    div.wrapper {
+        flex-direction: column;
+    }
     div.planner {
         flex-direction: column;
     }
