@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="topleft">
-        Change Theme:
+        Theme:
         <select id="theme-chooser">
             {% for theme in site.data.themes %}
                 <option value="{{theme.shortname}}">{{theme.name}}</option>
@@ -22,7 +22,7 @@ layout: default
     {% for course in site.data.courses %}
 
        <div class="course">
-          <h2><a href="{{course.short}}.html">{{course.name}}</a></h2>
+          <a href="{{course.short}}.html"><h2>{{course.name}}</h2></a>
        </div>
 
     {% endfor %}
