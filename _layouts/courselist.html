@@ -5,18 +5,18 @@ layout: default
 {% assign lang = site.data.language[page.lang] %}
 
 <div class="topleft">
-        Theme:
+        {{lang.theme}}:
         <select id="theme-chooser">
             {% for theme in site.data.themes %}
                 <option value="{{theme.shortname}}">{{theme.name}}</option>
             {% endfor %}
         </select>
 
-        Language:
+        {{lang.language}}:
         <select id="lang-chooser">
             {% for language in site.data.language %}
                 {% assign langu = language[1] %}
-                <option value="{{langu.short}}">{{langu.name}}</option>
+                <option value="{{langu.short}}/index.html">{{langu.name}}</option>
             {% endfor %}
         </select>
 </div>
@@ -32,7 +32,7 @@ layout: default
     {% for course in site.data.courses %}
 
        <div class="course">
-          <a href="{{course.short}}.html"><h2>{{course.name}}</h2></a>
+          <a href="{{site.baseurl}}/{{lang.short}}/{{course.short}}.html"><h2>{{course.name}}</h2></a>
        </div>
 
     {% endfor %}

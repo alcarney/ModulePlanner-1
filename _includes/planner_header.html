@@ -8,7 +8,7 @@
         <aside>
             <p>
                 <span class="theme">
-                    Theme:
+                    {{lang.theme}}:
                     <select id="theme-chooser">
                         {% for theme in site.data.themes %}
                             <option value="{{theme.shortname}}">{{theme.name}}</option>
@@ -17,11 +17,11 @@
                 </span>
 
                 <span class="language">
-                    Language:
+                    {{lang.language}}:
                     <select id="lang-chooser">
                         {% for language in site.data.language %}
                             {% assign langu = language[1] %}
-                            <option value="{{langu.short}}">{{langu.name}}</option>
+                            <option value="{{langu.short}}/{{page.short}}.html">{{langu.name}}</option>
                         {% endfor %}
                     </select>
                 </span>
