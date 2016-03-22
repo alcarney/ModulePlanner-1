@@ -117,6 +117,8 @@ end
 # aren't offered in the same course
 def testCourses(basedir)
   
+  puts "Testing course data."
+  
   # Load the data
   courses = Kwalify::Yaml.load_file("#{basedir}/_data/courses.yml")
   modules = Kwalify::Yaml.load_file("#{basedir}/_data/modules.yml")

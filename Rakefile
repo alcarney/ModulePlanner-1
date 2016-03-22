@@ -2,7 +2,9 @@ require 'bundler/setup'
 require 'html-proofer'
 require 'kwalify'
 require 'jekyll'
+
 require_relative 'tests/test-data'
+require_relative 'tests/test-html'
 
 task default: %w[help]
 task :help do
@@ -32,5 +34,6 @@ task :test do
 
   HTMLProofer.check_directory("./_site",
                               { :check_html => true,
+                                :disable_external => true,
                                 :only_4xx => true}).run
 end
