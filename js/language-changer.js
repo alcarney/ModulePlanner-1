@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         // Update the dropdown
         $(langchooser).val(short);
-        
+
         // If local storage is available, save the language so the change
         // is persistent both accross page loads and entire sessions
         if (typeof(Storage) !== undefined) {
@@ -27,7 +27,7 @@ $(document).ready(function () {
         // Get the current path
         var l = window.location;
         var path = l.pathname;
-        
+
         // Replace the lang part of the path
 
         // Handle the index page
@@ -41,7 +41,7 @@ $(document).ready(function () {
         // Build the new url
         var url = l.protocol + '//' + l.host + path;
 
-        // Open it 
+        // Open it
         window.open(url, "_self");
     };
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
     if (localStorage.lang) {
         var new_lang = localStorage.lang;
     } else {
-	      var new_lang = "en";
+	    var new_lang = "en";
     };
 
     // Get the current language from the url
@@ -59,17 +59,17 @@ $(document).ready(function () {
 
     // If the current language is different from the requested one chnage the
     // page
-   if (current_lang !== new_lang) {
+    if (current_lang !== new_lang) {
         changeLanguage(new_lang);
-   } else { 
-       // If not just ensure that the dropdown is correct
-       $(langchooser).val(current_lang);
-   }
+    } else {
+        // If not just ensure that the dropdown is correct
+        $(langchooser).val(current_lang);
+    }
 
     // Finally this code is only run when the user makes a choice using the
     // dropdown in the footer
     $(langchooser).change(function() {
         var new_lang = $(langchooser).val();
-	      changeLanguage(new_lang);
+        changeLanguage(new_lang);
     });
 });
