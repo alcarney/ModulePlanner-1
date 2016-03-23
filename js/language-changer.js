@@ -22,7 +22,7 @@ $(document).ready(function () {
         };
     };
 
-    // In case there already is a saved preference, load that theme
+    // In case there already is a saved preference, load that language
     // otherwise load the default
     if (localStorage.lang) {
         changeLanguage(localStorage.lang);
@@ -33,12 +33,11 @@ $(document).ready(function () {
     // Finally this code is only run when the user makes a choice using the
     // dropdown in the footer
     $(langchooser).change(function() {
-        var new_lang = $(langchooser).val();
-	    changeLanguage(new_lang);
-        var s = "http://"
-        var x = location.host;
-        var y = "/";
-        var z = s.concat(x, y, new_lang);
-        window.open(z, "_self");
+        var new_end = $(langchooser).val();
+        var new_lang = new_end.substr(0, 2);
+	    changeLanguage(new_end);
+        var l = window.location,
+        url = l.protocol + '//' + l.host + '/' + new_end;
+        window.open(url, "_self");
     });
 });
