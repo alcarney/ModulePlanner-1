@@ -1,4 +1,8 @@
-{% assign lang = site.data.language[page.lang] %}
+{% for l in site.data.language %}
+     {% if page.lang == l.short %}
+          {% assign lang = l %}
+     {% endif %}
+{% endfor %}
 
 <header class="site-header">
     <div class="group">
@@ -19,8 +23,7 @@
                 <span class="language">
                     {{lang.language}}:
                     <select id="lang-chooser">
-                        {% for language in site.data.language %}
-                            {% assign langu = language[1] %}
+                        {% for langu in site.data.language %}
                             <option value="{{langu.short}}/{{page.short}}.html">{{langu.name}}</option>
                         {% endfor %}
                     </select>

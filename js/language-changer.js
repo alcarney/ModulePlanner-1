@@ -12,6 +12,11 @@ $(document).ready(function () {
     //             - If the facility is available, saving the user preference
     var changeLanguage = function(short) {
 
+
+        // Unhide the relevant language
+        var new_lang = short.substr(0, 2);
+        $(langnames + "#" + new_lang).show();
+
         // Update the dropdown
         $(langchooser).val(short);
 
@@ -34,7 +39,7 @@ $(document).ready(function () {
     // dropdown in the footer
     $(langchooser).change(function() {
         var new_end = $(langchooser).val();
-        var new_lang = new_end.substr(0, 2);
+
 	    changeLanguage(new_end);
         var l = window.location,
         url = l.protocol + '//' + l.host + '/' + new_end;
