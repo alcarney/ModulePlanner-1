@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-{% assign lang = site.data.language[page.lang] %}
+{% for l in site.data.language %}
+     {% if page.lang == l.short %}
+          {% assign lang = l %}
+     {% endif %}
+{% endfor %}
 
 {% for c in site.data.courses %}
   {% if c.short == page.short %}

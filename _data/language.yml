@@ -1,29 +1,27 @@
-en:
-    name: En
-    year: Year
-    theme: Theme
-    short: en
-    reset: Clear Selected
-    credits: Credits
-    language: Language
-    requires: Requires
-    more-info: More info
-    select-deg: Please choose your degree
-    change-deg: Change your degree scheme
-    school-name: School of Mathematics
-    credits-chosen: Credits chosen
+- name: En
+  year: Year
+  theme: Theme
+  short: en
+  reset: Clear Selected
+  credits: Credits
+  language: Language
+  requires: Requires
+  more-info: More info
+  select-deg: Please choose your degree
+  change-deg: Change your degree scheme
+  school-name: School of Mathematics
+  credits-chosen: Credits chosen
 
-cy:
-    name: Cy
-    year: Blwyddyn
-    theme: Thema
-    short: cy
-    reset:  Clirio dewisiadau
-    credits: Credydau
-    language: iaith
-    requires: modiwlau ofynnol
-    more-info: Mwy o wybodaeth
-    select-deg: Dewiswch eich cynllun gradd os gwelwch yn dda
-    change-deg: Newidwch eich cynllun gradd
-    school-name: Yr Ysgol Fathemateg
-    credits-chosen: Credydau a ddewiswyd
+- name: Cy
+  year: Blwyddyn
+  theme: Thema
+  short: cy
+  reset:  Clirio dewisiadau
+  credits: Credydau
+  language: iaith
+  requires: modiwlau ofynnol
+  more-info: Mwy o wybodaeth
+  select-deg: Dewiswch eich cynllun gradd os gwelwch yn dda
+  change-deg: Newidwch eich cynllun gradd
+  school-name: Yr Ysgol Fathemateg
+  credits-chosen: Credydau a ddewiswyd
