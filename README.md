@@ -1,5 +1,7 @@
 # ModulePlanner [![Build Status](https://travis-ci.org/Moduleplanner/Moduleplanner.github.io.svg?branch=master)](https://travis-ci.org/Moduleplanner/Moduleplanner.github.io) [![Documentation Status](https://readthedocs.org/projects/moduleplannergithubio/badge/?version=latest)](http://moduleplannergithubio.readthedocs.org/en/latest/?badge=latest)
 
+[![Join the chat at https://gitter.im/Moduleplanner/Moduleplanner.github.io](https://badges.gitter.im/Moduleplanner/Moduleplanner.github.io.svg)](https://gitter.im/Moduleplanner/Moduleplanner.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 A website to help students choose their modules
 
