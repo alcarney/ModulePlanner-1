@@ -47,7 +47,7 @@
         {% assign required = m %}
       {% endif %}
     {% endfor %}
-    <li class="{{c}}">{{required.name}}</li>
+    <li class="{{c}}"><a href="#{{required.code}}">{{required.name}}</a></li>
   {% endfor %}
 </ul>
 {% endif %}
