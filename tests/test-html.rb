@@ -33,8 +33,9 @@ class ValidateCoursePage < ::HTMLProofer::Check
 
   # Load the data from the database, and 'attach' it to the class instance
   def loadData
-    @courses = YAML.load_file(File.expand_path('../../_data/courses.yml', __FILE__))
-    @modules = YAML.load_file(File.expand_path('../../_data/modules.yml', __FILE__))    
+    @courses  = YAML.load_file(File.expand_path('../../_data/courses.yml', __FILE__))
+    @modules  = YAML.load_file(File.expand_path('../../_data/modules.yml', __FILE__))    
+    @settings = YAML.load_file(File.expand_path('../../_data/settings.yml', __FILE__))
   end
 
   # Extract all the course shortnames from the database
@@ -214,7 +215,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     link = m.css("div.group > a")[0]['href']
 
     # TODO: Make this link a variable that is easily set by whoever uses this.
-    if link != "https://handbooks.data.cardiff.ac.uk/module/#{mspec["more-info"]}.html"
+    if link != "#{@settings["info"]}/#{mspec["more-info"]}.html"
       add_issue("Module #{mspec["code"]} is not linking to the correct resource! (#{link})")
     end
   end
@@ -274,10 +275,17 @@ class ValidateCoursePage < ::HTMLProofer::Check
           add_issue("Module #{mspec["code"]} is requiring a module that it shouldn't! (#{code})")
         end
 
+        # Is there a link to the correct required module on the page?
+        link = requirement.css("a")[0]["href"]
+
+        if link != "##{code}"
+          add_issue("Requirement #{code} for module #{mspec["code"]} does not have a link!")
+        end
+
         # Load the module which is required
         reqmod = getModuleByCode(code)
 
-        # Is the title correct
+        # Is the title correct?
         name = requirement.text
 
         if reqmod["name"] != name
