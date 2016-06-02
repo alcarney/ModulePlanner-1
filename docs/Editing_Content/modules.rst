@@ -33,7 +33,7 @@ This is what you write in modules.yml::
 	  name: Elementary Fluid Dynamics
 	  credits: 10
 	  requires: ['ma1300', 'ma2301']
-	  more-info: 1516-MA0235
+	  more-info: MA0235
 
 Example 2: without pre-requisites
 ====================================
@@ -47,7 +47,7 @@ This is what you write in modules.yml::
 	- code: ma0232
 	  name: Modelling with Differential Equations
 	  credits: 10
-	  more-info: 1516-MA0232
+	  more-info: MA0232
 
 You now know how add modules into the database. Once you have added all of your
 modules, you are ready to add in your school's :ref:`courses`.

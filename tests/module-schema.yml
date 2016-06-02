@@ -16,7 +16,7 @@ sequence:
       "more-info":
         type: str
         required: yes
-        pattern: "/[0-9]{4}-[A-Z]{2}[0-9]{4}/"
+        pattern: "/[A-Z]{2}[0-9]{4}/"
       "requires":
         type: seq
         required: no
