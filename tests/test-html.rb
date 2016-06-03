@@ -215,7 +215,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     link = m.css("div.group > a")[0]['href']
 
     # TODO: Make this link a variable that is easily set by whoever uses this.
-    if link != "#{@settings["info"]}/#{mspec["code"]}.html"
+    if link != "#{@settings["info"]}/#{mspec["code"].upcase}.html"
       add_issue("Module #{mspec["code"]} is not linking to the correct resource! (#{link})")
     end
   end

@@ -9,10 +9,11 @@ The more-info link
 **DISCLAIMER** *The set up of the more-info link assumes that exists a online
 version of your schools module handbook* **DISCLAIMER**
 
-You will find the URL for the each module in two places. The part that is the
-same for each link can be found in the :code:`settings.yml` file under the
-option :code:`info` and the part that is different for each module can be found
-in the :code:`module.yml` file under the option :code:`short-link`.
+You only need to save the part of the URL that is the same for each module. The
+part of the URL that is the same can be found in the :code:`settings.yml` file
+under the option :code:`info`, the part that changes for each module (the
+module-code.html part) is automatically added to the link.
+
 
 The free-standing link
 =======================
