@@ -15,7 +15,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
   #     - The page corresponding to a course has a div with the
   #       class 'planner'.
   #     - The page contains a many years as defined in the data
-  #     - The page has a credit counter for each year 
+  #     - The page has a credit counter for each year
   #     - Each module is on the page once and once only
   #     - Each course isn't displaying modules it shouldn't, or missing modules it
   #       should be showing
@@ -34,7 +34,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
   # Load the data from the database, and 'attach' it to the class instance
   def loadData
     @courses  = YAML.load_file(File.expand_path('../../_data/courses.yml', __FILE__))
-    @modules  = YAML.load_file(File.expand_path('../../_data/modules.yml', __FILE__))    
+    @modules  = YAML.load_file(File.expand_path('../../_data/modules.yml', __FILE__))
     @settings = YAML.load_file(File.expand_path('../../_data/settings.yml', __FILE__))
   end
 
@@ -111,7 +111,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     end
   end
 
-  # Checks to see if the page has a div with the planner class 
+  # Checks to see if the page has a div with the planner class
   def plannerClass?
     div = @html.css("div.planner")
 
@@ -162,7 +162,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     if modids.length != modids.uniq.length
       add_issue("Page contains duplicate modules!")
     end
-    
+
     if modids.length > getAllModuleCodes(course).length
       add_issue("Page contains modules that are not offered by this course!")
     end
@@ -215,7 +215,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     link = m.css("div.group > a")[0]['href']
 
     # TODO: Make this link a variable that is easily set by whoever uses this.
-    if link != "#{@settings["info"]}/#{mspec["more-info"]}.html"
+    if link != "#{@settings["info"]}/#{mspec["code"].upcase}.html"
       add_issue("Module #{mspec["code"]} is not linking to the correct resource! (#{link})")
     end
   end
@@ -237,7 +237,7 @@ class ValidateCoursePage < ::HTMLProofer::Check
     # Check see if there is anything to test
     if not provides.empty?
 
-      # For each module 
+      # For each module
       for span in provides
         code = span["class"]
 
