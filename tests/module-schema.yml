@@ -13,10 +13,6 @@ sequence:
       "credits":
         type: int
         required: yes
-      "more-info":
-        type: str
-        required: yes
-        pattern: "/[A-Z]{2}[0-9]{4}/"
       "requires":
         type: seq
         required: no

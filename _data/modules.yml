@@ -1,356 +1,289 @@
 - code: ma1001
   name: Elementary Differential Equations
   credits: 10
-  more-info: MA1001
 
 - code: ma1004
   name: Geometry
   credits: 10
-  more-info: MA1004
 
 - code: ma1005
   name: Foundations of Mathematics I
   credits: 20
-  more-info: MA1005
 
 - code: ma1007
   name: Vectors and Matrices
   credits: 10
-  more-info: MA1007
 
 - code: ma1500
   name: Introduction to Probability Theory
   credits: 10
-  more-info: MA1500
 
 - code: ma1006
   name: Foundations of Mathematics II
   credits: 20
-  more-info: MA1006
 
 - code: ma1003
   name: Computing for Mathematics
   credits: 20
-  more-info: MA1003
 
 - code: ma1300
   name: Mechanics I
   credits: 10
-  more-info: MA1300
 
 - code: ma0111
   name: Elementary Number Theory I
   credits: 10
-  more-info: MA0111
 
 - code: ma1501
   name: Statistical Inference
   credits: 10
   requires: ['ma1500']
-  more-info: MA1501
 
 - code: ma0221
   name: Analysis III
   credits: 10
-  more-info: MA0221
 
 - code: ma0212
   name: Linear Algebra
   credits: 10
-  more-info: MA0212
 
 - code: ma2004
   name: Series and Transforms
   credits: 10
-  more-info: MA2004
 
 - code: ma2001
   name: Calculus of Several Variables
   credits: 10
-  more-info: MA2001
 
 - code: ma2002
   name: Matrix Algebra
   credits: 10
-  more-info: MA2002
 
 - code: ma2003
   name: Complex Analysis
   credits: 10
-  more-info: MA2003
 
 - code: ma0216
   name: Elementary Number Theory II
   credits: 10
   requires: ['ma0111']
-  more-info: MA0216
 
 - code: ma0232
   name: Modelling with Differential Equations
   credits: 10
-  more-info: MA0232
 
 - code: ma0235
   name: Elementary Fluid Dynamics
   credits: 10
   requires: ['ma1300', 'ma2301']
-  more-info: MA0235
 
 - code: ma0261
   name: Operational Research
   credits: 20
   requires: ['ma1500']
-  more-info: MA0261
 
 - code: ma0276
   name: Visual Basic Programming for OR
   credits: 10
   requires: ['ma1003']
-  more-info: MA0276
 
 - code: ma2300
   name: Mechanics II
   credits: 10
   requires: ['ma1300']
-  more-info: MA2300
 
 - code: ma2301
   name: Vector Calculus
   credits: 10
-  more-info: MA2301
 
 - code: ma2700
   name: Numerical Analysis II
   credits: 10
-  more-info: MA2700
 
 - code: ma0291
   name: Accountancy
   credits: 10
-  more-info: MA0291
 
 - code: ma2005
   name: Ordinary Differential Equations
   credits: 10
-  more-info: MA2005
 
 - code: ma2500
   name: Foundations of Probability and Statistics
   credits: 20
   requires: ['ma1500', 'ma1501']
-  more-info: MA2500
 
 - code: cm2303
   name: Algorithms and Data Structures
   credits: 20
-  more-info: CM2303
 
 - code: cm2203
   name: Informatics
   credits: 10
-  more-info: CM2203
 
 - code: ma2501
   name: Programming and Statistics
   credits: 10
   requires: ['ma1501', 'ma2500']
-  more-info: MA2501
 
 - code: ma0213
   name: Groups
   credits: 10
-  more-info: MA0213
 
 - code: cm2207
   name: Introduction to the Theory of Computation
   credits: 10
-  more-info: CM2207
 
 - code: ma0332
   name: Fluid Dynamics
   credits: 10
   requires: ['ma0235', 'ma2301']
-  more-info: MA0332
 
 - code: ma0358
   name: Mathematical Programming
   credits: 10
-  more-info: MA0358
 
 - code: ma0391
   name: Project
   credits: 20
-  more-info: MA0391
 
 - code: ma0392
   name: Project (Half)
   credits: 10
-  more-info: MA0392
 
 - code: ma3000
   name: Complex Function Theory
   credits: 10
   requires: ['ma2003']
-  more-info: MA3000
 
 - code: ma0367
   name: Time Series and Forecasting
   credits: 10
   requires: ['ma2500']
-  more-info: MA0367
 
 - code: ma3003
   name: Groups, Rings and Fields
   credits: 10
-  more-info: MA3003
 
 - code: ma3004
   name: Combinatorics
   credits: 10
-  more-info: MA3004
 
 - code: ma0322
   name: Knots
   credits: 10
   requires: ['ma0212']
-  more-info: MA0322
 
 - code: ma3501
   name: Elements of Mathematical Statistics
   credits: 10
   requires: ['ma2500']
-  more-info: MA3501
 
 - code: ma3700
   name: Mathematical Methods for Data Mining
   credits: 10
-  more-info: MA3700
 
 - code: ma3006
   name: Introduction to Coding Theory and Data Compression
   credits: 20
-  more-info: MA3006
 
 - code: ma3301
   name: Applied Nonlinear Systems
   credits: 10
   requires: ['ma0232']
-  more-info: MA3301
 
 - code: ma3005
   name: Introduction to Functional and Fourier Analysis
   credits: 20
   requires: ['ma0212', 'ma0221']
-  more-info: MA3005
 
 - code: ma3502
   name: Regression Analysis and Experimental Design
   credits: 20
   requires: ['ma1501']
-  more-info: MA3502
 
 - code: ma3503
   name: Stochastic Processes for Finance and Insurance
   credits: 20
   requires: ['ma2500']
-  more-info: MA3503
 
 - code: ma3303
   name: Theoretical and Computational Partial Differential Equations
   credits: 20
-  more-info: MA3303
 
 - code: ma3304
   name: Methods of Applied Mathematics
   credits: 20
-  more-info: MA3304
 
 - code: ma3900
   name: Cyflwyniad i addysgu Mathemateg mewn ysgol uwchradd
   credits: 20
-  more-info: MA3900
 
 - code: ma3505
   name: Multivariate Statistics
   credits: 10
   requires: ['ma2500']
-  more-info: MA3505
 
 - code: ma3504
   name: Official Statistics
   credits: 10
   requires: ['ma1501']
-  more-info: MA3504
 
 - code: ma3602
   name: Algorithms and Heuristics
   credits: 10
   requires: ['ma0261']
-  more-info: MA3602
 
 - code: ma3601
   name: Queueing, Inventory and Game Theory
   credits: 20
   requires: ['ma0261']
-  more-info: MA3601
 
 - code: ma3901
   name: Introduction to secondary school Mathematics teaching
   credits: 20
-  more-info: MA3901
 
 - code: cm3201
   name: Project and Change Management
   credits: 20
-  more-info: CM3201
 
 - code: cm3111
   name: Forensics
   credits: 10
-  more-info: CM3111
 
 - code: ma4900
   name: MMath Project
   credits: 40
-  more-info: MA4900
 
 - code: ma4001
   name: Functional Analysis
   credits: 20
-  more-info: MA4001
 
 - code: ma4008
   name: Computational Fluid Dynamics
   credits: 20
   requires: ['ma3303']
-  more-info: MA4008
 
 - code: ma4007
   name: Measure Theory
   credits: 20
-  more-info: MA4007
 
 - code: ma4009
   name: Mathematical Principles of Image Processing
   credits: 20
-  more-info: MA4009
 
 - code: ma4901
   name: Reading Module
   credits: 20
-  more-info: MA4901
 
 - code: ma4012
   name: Finite Elasticity
   credits: 20
-  more-info: MA4012
 
 - code: ma4011
   name: Combinatorial and Analytic Number Theory
   credits: 20
-  more-info: MA4011
 
 - code: ma4013
   name: Advanced topics in Analysis with application to PDEs
   credits: 20
-  more-info: MA4013
