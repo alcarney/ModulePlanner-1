@@ -209,6 +209,18 @@ $(document).ready(function() {
             updateTotals(creditTotals);
         });
 
+    // This stops clicks on the more-info link also (de)selecting the module
+    $("div.module > div.group > a").click(function (event) {
+
+        // For IE
+        event.cancelBubble = true;
+
+        // For everyone else
+        if (event.stopPropagation) {
+            event.stopPropagation();
+        }
+    })
+
     // This sets up the clear button with its ability to deselect everything
     $("div.wrapper > h2.clear").click(function() {
         $("div.optional > div.module").each(function() {
