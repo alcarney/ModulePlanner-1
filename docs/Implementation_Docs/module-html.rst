@@ -88,7 +88,7 @@ Next we add a link to where the user can find more information about the content
 of the module as well as how many credits it is worth::
 
     <div class="group">
-        <a href="{{site.data.settings.info}}/{{module.more-info}}.html" target="_blank">{{lang.more-info}}</a>
+        <a href="{{site.data.settings.info}}/{{module.code | upcase}}.html" target="_blank">{{lang.more-info}}</a>
         <aside>{{lang.credits}}:<span class="credit">{{module.credits}}</span></aside>
     </div>
 

@@ -98,6 +98,24 @@ is as simple as::
             updateTotals(creditTotals);
     });
 
+Since the above defined the entire module :code:`div` element to be clickable
+that when the user clicks on the :code:`more-info` link it fools our code into
+thinking that the user is trying to select the module when in fact they only
+want to find out more about it. So this bit of code will stop the click before
+it reaches the main :code:`div` element and activating the above code::
+
+    $("div.module > div.group > a").click(function (event) {
+
+        event.cancelBubble = true;
+
+        if (event.stopPropagation) {
+            event.stopPropagation();
+        }
+    })
+    
+The :code:`cancelBubble = true` line is needed to support Internet Explorer
+browsers while the :code:`stopPropogation` function is for all the other browsers.
+
 -----------------------------
 Clearing all Selected Modules
 -----------------------------
